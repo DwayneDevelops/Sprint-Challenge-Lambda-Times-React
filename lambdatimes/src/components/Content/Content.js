@@ -22,11 +22,11 @@ export default class Content extends Component {
 
   changeSelected = tab => {
     this.setState({selected: tab})
-    this.filterCards()
+    
   };
 
   filterCards = () => {
-    return this.state.cards.selected === 'all' ? this.state.cards : this.state.cards.filter(card => card.tab === this.state.selected);
+    return this.state.tabs.selected === 'all' ? this.state.cards : this.state.cards.filter(card => card.tab === this.state.selected);
   };
 
   render() {
