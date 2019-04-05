@@ -3,7 +3,7 @@ import React from 'react';
 
 const Tab = props => {
   let selectedClass = 'tab'
-  if (props.tab === props.selected) {
+  if (props.tab === props.selectedTab) {
     selectedClass = 'tab active-tab'
   }
   return (
