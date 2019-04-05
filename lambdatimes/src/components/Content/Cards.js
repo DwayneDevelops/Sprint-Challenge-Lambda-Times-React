@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Card from './Card';
-import PropTypes from 'prop-types';
+
 
 class Cards extends Component {
   constructor(props) {
