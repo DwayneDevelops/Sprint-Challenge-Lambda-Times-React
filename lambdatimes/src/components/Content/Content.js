@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import Tabs from './Tabs';
 import Cards from './Cards';
 
-// Importing our tab and card data. No need to change anything here.
 import { tabData, cardData } from '../../data';
 
 export default class Content extends Component {
@@ -26,17 +25,13 @@ export default class Content extends Component {
   };
 
   filterCards = () => {
-    return this.state.tabs.selected === 'all' ? this.state.cards : this.state.cards.filter(card => card.tab === this.state.selected);
+    return this.state.selected === 'all' ? this.state.cards : this.state.cards.filter(card => card.tab === this.state.selected);
   };
 
   render() {
     return (
       <div className="content-container">
-        {/* 
-          Add 2 props to the Tabs component, 
-          `selectedTab` that includes the currently selected tab
-          and `selectTabHandler` that includes the function to change the selected tab
-        */}
+        
         <Tabs 
         tabs={this.state.tabs} 
         selectedTab={this.state.selected} 
