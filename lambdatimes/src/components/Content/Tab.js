@@ -17,7 +17,6 @@ const StyledTab = Styled.div`
   font-weight: bold;
   &:hover{ text-decoration: underline;
   } 
- 
 `;
 
 const ActiveTab = Styled.div`

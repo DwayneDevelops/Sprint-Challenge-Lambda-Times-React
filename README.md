@@ -30,17 +30,11 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 
 - [x] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
 
-    PropTypes are used to direct which types of properties an object must/should contain. It is important because
-
-- [ ] Describe a life-cycle event in React?
-
-
+- [x] Describe a life-cycle event in React?
 
 - [x] Explain the details of a Higher Order Component?
 
-    A HOC is a component that takes in a another component as a function. Ex: const someHOC = Component1() => Component2() => {}
-
-- [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+- [x] What are three different ways to style components in React? Explain some of the benefits of each.
 
 
 
