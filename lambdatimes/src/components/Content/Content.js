@@ -4,6 +4,13 @@ import Tabs from './Tabs';
 import Cards from './Cards';
 
 import { tabData, cardData } from '../../data';
+import Styled from 'styled-components';
+
+const ContentContainer = Styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 export default class Content extends Component {
   constructor(props) {
@@ -30,7 +37,7 @@ export default class Content extends Component {
 
   render() {
     return (
-      <div className="content-container">
+      <ContentContainer>
         
         <Tabs 
         tabs={this.state.tabs} 
@@ -38,7 +45,7 @@ export default class Content extends Component {
         selectTabHandler={this.changeSelected} />
 
         <Cards cards={this.filterCards()} />
-      </div>
+      </ContentContainer>
     );
   }
 }
